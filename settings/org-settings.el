@@ -11,6 +11,7 @@
 (eal-eval-by-modes
  `org-mode
  (lambda (mode)
+   (require 'org-htmlslidy)
    (add-hook 'org-mode-hook 'my-org-mode-hook)
    (setq org-hide-leading-stars t)
    (setq org-log-done t)

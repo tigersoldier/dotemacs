@@ -8,7 +8,7 @@
 	 (mouse-wheel-mode . 1)
 	 (mouse-wheel-follow-mouse . t)
 	 (mouse-avoidance-mode . 'exile)
-	 (font . "文泉驿等宽微米黑 11"))
+	 (font . "文泉驿等宽微米黑 8"))
         (nil 
          (menu-bar-lines . 0) (tool-bar-lines . 0))))
 

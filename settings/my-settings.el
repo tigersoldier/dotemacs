@@ -8,5 +8,6 @@
 (require 'js2-settings)
 (require 'html-settings)
 (require 'shell-settings)
+(require 'markdown-settings)
 
 (provide 'my-settings)
