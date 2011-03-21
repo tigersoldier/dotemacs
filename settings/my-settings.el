@@ -9,5 +9,6 @@
 (require 'html-settings)
 (require 'shell-settings)
 (require 'markdown-settings)
+(require 'ido-settings)
 
 (provide 'my-settings)
