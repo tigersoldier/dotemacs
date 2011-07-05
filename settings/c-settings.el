@@ -27,7 +27,10 @@
   ;;; hungry-delete
   (c-toggle-hungry-state 1)
   ;;; 对CamelCase命名的变量，M-f M-b 一次移动以大写为分隔
-  (c-subword-mode 1)
+  (if (functionp 'subword-mode)
+      (subword-mode 1)
+    (if (functionp 'c-subword-mode)
+        (c-subword-mode 1)))
   ;;; 独占一行的注释直接按代码缩进
   (setq c-indent-comments-syntactically-p t)
   ;;预处理设置
