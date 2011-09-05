@@ -86,9 +86,6 @@
 
 (defun ac-settings-4-lisp ()
   "Auto complete settings for lisp mode."
-  (setq ac-omni-completion-sources '(("\\<featurep\s+'" ac+-source-elisp-features)
-                                     ("\\<require\s+'"  ac+-source-elisp-features)
-                                     ("\\<load\s+\""    ac-source-emacs-lisp-features)))
   (ac+-apply-source-elisp-faces)
   (setq ac-sources
         '(ac-source-features
@@ -104,8 +101,6 @@
           ac-source-words-in-same-mode-buffers)))
 
 (defun ac-settings-4-java ()
-  (setq ac-omni-completion-sources (list (cons "\\." '(ac-source-semantic))
-                                         (cons "->" '(ac-source-semantic))))
   (setq ac-sources
         '(ac-source-semantic
           ac-source-yasnippet
@@ -118,11 +113,11 @@
 (defun ac-settings-4-c ()
   (setq ac-sources
         '(ac-source-yasnippet
-          ac-source-dictionary
+;          ac-source-dictionary
           ac-source-semantic
-          ac-source-abbrev
-          ac-source-words-in-buffer
-          ac-source-words-in-same-mode-buffers
+;          ac-source-abbrev
+;          ac-source-words-in-buffer
+;          ac-source-words-in-same-mode-buffers
           ac-source-files-in-current-dir
           ac-source-filename)))
 
@@ -210,7 +205,8 @@
    ('ruby-mode-hook   'ac-settings-4-ruby)
    ('html-mode-hook   'ac-settings-4-html)
    ('awk-mode-hook    'ac-settings-4-awk)
-   ('tcl-mode-hook    'ac-settings-4-tcl)))
+   ('tcl-mode-hook    'ac-settings-4-tcl)
+   ('python-mode-hook 'ac-settings-4-python)))
 
 (eal-eval-by-modes
  ac-modes

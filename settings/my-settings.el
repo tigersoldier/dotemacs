@@ -1,3 +1,4 @@
+(require 'auto-complete-settings)
 (require 'font-settings)
 (require 'global-keybindings)
 (require 'misc-settings)

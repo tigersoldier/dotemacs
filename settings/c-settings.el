@@ -1,5 +1,7 @@
 ; -*- mode: Emacs-Lisp -*-
 
+(load-file "~/.emacs.d/elisps/cedet/common/cedet.el")
+
 (defconst cedet-user-include-dirs
   (list ".." "../lib" "../lib/chardect/include"
 	"../.." "../../lib/chardect/include"))
@@ -9,16 +11,17 @@
 	"/usr/include/libpurple/"))
 
 (eval-after-load "semantic-c"
-  `((let ((include-dirs (append cedet-user-include-dirs cedet-system-include-dirs)))
+  `(let ((include-dirs (append cedet-user-include-dirs cedet-system-include-dirs)))
       (mapc (lambda (dir)
               (semantic-add-system-include dir 'c++-mode)
               (semantic-add-system-include dir 'c-mode))
-            include-dirs))))
+            include-dirs)))
 
 (defun  my-c-mode-common-hook ()
   (require 'doxymacs)
   (require 'xcscope)
   (require 'yasnippet)
+  (semantic-load-enable-code-helpers)
   (c-set-style "gnu")
   (c-set-offset 'inline-open 0)
   (c-set-offset 'friend '-)
