@@ -23,7 +23,7 @@
    (setq org-export-html-table-tag "<table>")
    (setq org-export-htmlize-output-type (quote css))
    (setq org-export-language-setup (quote (("zh" "作者" "日期" "目录" "脚注") ("en" "Author" "Date" "Table of Contents" "Footnotes") )))
-   (org-export-with-section-numbers nil))
+   (setq org-export-with-section-numbers nil))
 )
 
 (provide 'org-settings)
