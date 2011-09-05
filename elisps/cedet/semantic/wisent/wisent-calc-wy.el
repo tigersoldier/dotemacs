@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2009 David Ponce
 
-;; Author: tigersoldier <tigersoldie@ubuntu.ubuntu-domain>
-;; Created: 2010-07-07 19:10:14+0800
+;; Author: TigerSoldier <tigersoldier@archlinux>
+;; Created: 2011-09-05 13:00:56+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

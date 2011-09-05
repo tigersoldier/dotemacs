@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2005 Joakim Verona, Eric Ludlam
 
-;; Author: tigersoldier <tigersoldie@ubuntu.ubuntu-domain>
-;; Created: 2010-07-07 19:10:24+0800
+;; Author: TigerSoldier <tigersoldier@archlinux>
+;; Created: 2011-09-05 13:01:06+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

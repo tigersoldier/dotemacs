@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Eric M. Ludlam
 
-;; Author: tigersoldier <tigersoldie@ubuntu.ubuntu-domain>
-;; Created: 2010-07-07 19:10:29+0800
+;; Author: TigerSoldier <tigersoldier@archlinux>
+;; Created: 2011-09-05 13:01:12+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
@@ -1244,7 +1244,9 @@
 	 (nth 7 vals))
 	(nth 0 vals)
 	(nth 10 vals)
-	(nth 4 vals))
+	(list
+	 (nth 4 vals))
+	(nth 9 vals))
       )
      (opt-stars
       opt-class
@@ -1266,7 +1268,9 @@
 	 (nth 6 vals))
 	(nth 0 vals)
 	(nth 9 vals)
-	(nth 4 vals))
+	(list
+	 (nth 4 vals))
+	(nth 8 vals))
       )
      ) ;; end func-decl
 

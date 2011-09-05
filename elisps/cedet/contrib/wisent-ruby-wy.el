@@ -2,8 +2,8 @@
 
 ;;; Copyright (C) 2007 Daniel Debertin (debertin@gmail.com)
 
-;; Author: tigersoldier <tigersoldie@ubuntu.ubuntu-domain>
-;; Created: 2010-07-07 19:10:55+0800
+;; Author: TigerSoldier <tigersoldier@archlinux>
+;; Created: 2011-09-05 13:01:49+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
